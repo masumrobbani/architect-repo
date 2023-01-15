@@ -5,6 +5,7 @@
 
 body {
     font-family: Work Sans;
+    position: absolute;
 }
 
 header {
@@ -30,11 +31,13 @@ header {
     font-weight: 700;
     font-size: 45px;
     text-align: center;
+    margin-top: 50px;
     color: #131313;
 }
 
 .items {
     display: flex;
+    margin-top: 60px;
 
 }
 
@@ -49,7 +52,7 @@ header {
 /* -------------banner style 
 ------------------------------ */
 
-.banner {
+.banner{
     align-items: center;
     text-align: center;
     width: 862px;
@@ -106,7 +109,7 @@ header {
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 73px;
+    grid-column-gap: 150px;
     margin: 85px 301px;
 
 }
@@ -175,11 +178,12 @@ header {
 
 .architect-img {
     /* display: flex; */
-    position: relative;
-    flex-direction: end;
+    /* position: relative; */
+    flex-direction: c;
     width: 800px;
     height: 1059px;
     margin-left: 50px;
+
 }
 
 .architect-info-title {
@@ -220,6 +224,9 @@ header {
     font-size: 35px;
     text-align: center;
     color: #FFFFFF;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
 }
 
 /* ----------------third section style 
@@ -256,8 +263,11 @@ header {
     border-radius: 8px;
     align-items: center;
     text-align: center;
+    transform: rotate(30deg);
 }
-
+.project-1:hover{
+    width: 200px;
+}
 .award {
     padding: 45px;
 }
@@ -267,8 +277,6 @@ header {
     color: #424242;
 }
 
-/* -------------another section added style 
------------------------------------------------*/
 
 
 /* ------------------footer style 
@@ -306,9 +314,38 @@ header {
     margin-left: 240px;
     margin-right: 240px;
     margin-bottom: 130px;
+   
+}
+/* -----------------another section added style 
+----------------------------------------------------- */
+.contact-form{
+    align-items: center;
+    text-align: center;
+    width: 862px;
+    height: 225px;
+    margin-top: 100px;
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+    background-color: #424242;
+}
+.contact-title{
+   padding-top: 50px;
+   font-size: 40px;
+   margin-bottom: 30px;
+}
+.contact-form >input{
+    width: 30%;
+    height: 40px;
+    font-size: 30px;
 }
 
+/* -------------copyright style 
+ ----------------------------------*/
 .copyright {
+    display: flex;
+    justify-content: center;
     width: 1440px;
     height: 100px;
     background-color: #FFF4E7;
@@ -326,3 +363,29 @@ header {
     color: #424242;
     margin: 39px 410px;
 }
+
+/* ------------------
+media query style 
+-------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    body {
+    
+    
+    }
+    .nav-container{
+        display: inline-block;
+    }
+    .banner{
+       align-items: center;
+       text-align: center;
+    }
+    .banner-img{
+       object-fit: cover;
+    }
+    .team-work{
+        flex-direction: column-reverse;
+    }
+    
+    }
