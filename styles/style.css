@@ -52,7 +52,7 @@ header {
 /* -------------banner style 
 ------------------------------ */
 
-.banner{
+.banner {
     align-items: center;
     text-align: center;
     width: 862px;
@@ -265,9 +265,11 @@ header {
     text-align: center;
     transform: rotate(30deg);
 }
-.project-1:hover{
+
+.project-1:hover {
     width: 200px;
 }
+
 .award {
     padding: 45px;
 }
@@ -314,11 +316,12 @@ header {
     margin-left: 240px;
     margin-right: 240px;
     margin-bottom: 130px;
-   
+
 }
+
 /* -----------------another section added style 
 ----------------------------------------------------- */
-.contact-form{
+.contact-form {
     align-items: center;
     text-align: center;
     width: 862px;
@@ -330,12 +333,14 @@ header {
     color: whitesmoke;
     background-color: #424242;
 }
-.contact-title{
-   padding-top: 50px;
-   font-size: 40px;
-   margin-bottom: 30px;
+
+.contact-title {
+    padding-top: 50px;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
-.contact-form >input{
+
+.contact-form>input {
     width: 30%;
     height: 40px;
     font-size: 30px;
@@ -368,24 +373,36 @@ header {
 media query style 
 -------------------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
     body {
-    
-    
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    .nav-container{
+
+    /* .nav-container {
         display: inline-block;
+        margin: 0px;
     }
-    .banner{
-       align-items: center;
-       text-align: center;
+
+    .menu-container {
+        display: inline;
     }
-    .banner-img{
-       object-fit: cover;
+
+    .banner {
+        width: 100%;
+        height: 100%;
+        align-items: left;
+        text-align: left;
     }
-    .team-work{
+
+    .banner-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .team-work {
         flex-direction: column-reverse;
-    }
-    
-    }
+    } */
+
+}
